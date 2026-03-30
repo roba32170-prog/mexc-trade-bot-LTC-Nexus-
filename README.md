@@ -41,17 +41,6 @@ UI: Jetpack Fragment + Material Design
 API: MEXC Public API (v3)
 アーキテクチャ: MVVM + Repository Pattern
 
-📁 プロジェクト構造（抜粋）
-textcom.ltcnexus.app/
-├── ui/fragments/DashboardFragment.kt      ← メイン画面（本ファイル）
-├── analysis/
-│   ├── TechnicalAnalysis.kt
-│   └── LogicEvaluator.kt
-├── data/
-│   ├── repository/TradingRepository.kt
-│   └── model/Candle.kt, TechnicalIndicators.kt
-├── ui/adapters/IndicatorAdapter.kt
-└── data/local/AppDatabase.kt
 ⚙️ カスタマイズ方法
 1. 更新間隔の変更
 DashboardFragment.kt 内の以下を変更：
