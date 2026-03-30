@@ -24,58 +24,6 @@
 
 **Strategy Editor**を開き、以下のJSONを貼り付けて保存してください：
 
-```json
-{
-  "strategy_name": "RSI Momentum Strategy",
-  "description": "RSIベースの高精度エントリー戦略",
-  "entry_gate": "rsi14 < 38 && adx > 22",
-  "exit_gate": "rsi14 > 67 || adx < 18",
-  "timeframe": "5m",
-  "version": "1.2"
-}
-2. アプリを起動
-
-アプリ起動後、自動で1秒ごとにデータ更新が開始されます
-タイムフレームボタンでチャート期間を切り替え可能
-青いライン = LTC価格推移
-緑の丸 + BUY = 買いシグナル
-赤の丸 + SELL = 売りシグナル
-
-📊 Strategy Editor ガイド
-利用可能な指標（TechnicalAnalysisクラスより）
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-指標説明使用例rsi1414期間RSIrsi14 < 35adxADX（トレンド強度）adx > 25signalStrength総合シグナル強度signalStrength > 0.7overallSignal総合判断 ("BUY"/"SELL")overallSignal == "BUY"
-論理演算子対応
-
 &&（AND）
 ||（OR）
 <, >, <=, >=, ==
